@@ -1,0 +1,44 @@
+parameters:
+    photo: CoreBundle\Entity\Photo
+    comment: CoreBundle\Entity\Comment
+    order: CoreBundle\Entity\Order
+
+services:
+    photo.handler:
+        class: CoreBundle\Handler\PhotoHandler
+        arguments: [@service_container, %photo%]
+
+    comment.handler:
+        class: CoreBundle\Handler\CommentHandler
+        arguments: [@service_container, %comment%]
+
+    order.handler:
+        class: CoreBundle\Handler\OrderHandler
+        arguments: [@service_container, %order%]
+
+    admin.photo:
+        class: CoreBundle\Admin\PhotoAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-picture-o"></i>', group: "Галерея", label: "Фото" }
+        arguments:
+            - ~
+            - %photo%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.comment:
+        class: CoreBundle\Admin\CommentAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-comment-o"></i>', group: "Коментарии", label: "Коментарии" }
+        arguments:
+            - ~
+            - %comment%
+            - 'SonataAdminBundle:CRUD'
+
+    admin.order:
+        class: CoreBundle\Admin\OrderAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm,  icon: '<i class="fa fa-envelope-o"></i>', group: "Заказы", label: "Заказы" }
+        arguments:
+            - ~
+            - %order%
+            - 'SonataAdminBundle:CRUD'

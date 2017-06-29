@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Monya autoPaint</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block metateg %}
+        <meta name="description" content="у Мони малярка лучшая в Одессе" >
+        <meta name="keywords" content="малярка, покраска, рихтовка, кузовные работы, геометрия кузова, оптика, пластик, стекловолокно" />
+    {% endblock %}
+    <link rel="icon" href="/img/favicon.png"/>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid-3.3.1.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<header class="menu-fixed">
+    <div class="container-fluid">
+        <div class="row">
+            <svg xmlns="http://www.w3.org/2000/svg" id="headsvg" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 "
+                 version="1.0" width="200px" height="100px" viewBox="0 0 400.000000 184.000000"
+                 preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,184.000000) scale(0.100000,-0.100000)"
+                   fill="#..." stroke="none">
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1325 1670 c-235 -21 -434 -80 -575 -168 -68 -44 -51 -54 22 -13 112
+62 311 118 523 146 122 17 482 24 524 10 12 -3 21 -2 21 3 0 20 -369 36 -515
+22z">
+                        <animate id="p1" attributeName="stroke-dashoffset" begin="0.1s;f1.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f1" attributeName="fill" begin="p1.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1795 1626 c-76 -20 -99 -32 -140 -68 -66 -57 -81 -127 -45 -207 20
+-43 20 -43 62 -37 94 14 557 18 693 7 161 -14 318 -43 387 -73 92 -39 133
+-118 92 -176 -9 -13 -13 -26 -10 -29 9 -10 34 27 47 68 37 119 -150 203 -526
+238 -173 16 -377 21 -538 13 -165 -8 -167 -7 -167 58 0 137 220 218 442 161
+41 -11 105 -33 141 -50 74 -33 216 -123 261 -164 48 -45 53 -30 5 16 -78 76
+-241 172 -379 222 -91 33 -244 43 -325 21z">
+                        <animate id="p2" attributeName="stroke-dashoffset" begin="0.1s;f2.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f2" attributeName="fill" begin="p2.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1822 1565 c-62 -19 -75 -25 -70 -30 3 -3 25 2 49 11 72 27 226 23
+319 -9 87 -30 196 -88 250 -135 33 -28 100 -54 100 -39 0 2 -34 28 -75 57 -92
+63 -218 122 -306 144 -78 19 -207 20 -267 1z">
+                        <animate id="p3" attributeName="stroke-dashoffset" begin="0.1s;f3.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f3" attributeName="fill" begin="p3.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2090 1532 c0 -4 16 -14 35 -21 19 -6 74 -38 122 -69 49 -32 102 -63
+118 -70 l30 -12 -35 31 c-57 50 -270 161 -270 141z">
+                        <animate id="p4" attributeName="stroke-dashoffset" begin="0.1s;f4.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f4" attributeName="fill" begin="p4.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2470 1451 c0 -5 21 -12 46 -16 25 -3 54 -15 66 -27 19 -19 19 -21 2
+-39 -9 -10 -15 -21 -13 -24 10 -9 48 26 51 48 2 18 -6 26 -42 44 -46 22 -110
+30 -110 14z">
+                        <animate id="p5" attributeName="stroke-dashoffset" begin="0.1s;f5.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f5" attributeName="fill" begin="p5.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2620 1177 c-47 -31 -68 -71 -88 -167 l-17 -81 -73 -25 c-40 -13
+-100 -38 -134 -55 -67 -34 -284 -164 -309 -185 -22 -19 -26 -11 -19 38 8 60
+-4 140 -30 192 -16 34 -32 50 -65 66 -25 12 -55 20 -67 18 -20 -3 -18 -6 17
+-23 45 -23 80 -69 96 -129 16 -60 4 -185 -25 -256 -13 -33 -22 -60 -19 -60 2
+0 31 23 65 51 129 107 380 261 529 324 l65 28 13 86 c7 48 21 100 32 117 19
+32 59 64 79 64 13 0 13 -35 -1 -85 l-11 -39 -19 23 c-11 14 -25 21 -34 17 -22
+-8 -18 -29 10 -56 31 -29 31 -31 0 -80 l-26 -40 25 -25 c33 -33 62 -32 95 4
+34 36 51 92 51 165 0 51 -4 61 -31 88 -23 24 -27 33 -17 39 8 6 0 9 -23 9 -21
+0 -50 -9 -69 -23z m120 -89 c0 -17 -7 -31 -15 -35 -24 -9 -27 1 -19 53 6 43 8
+46 20 29 8 -10 14 -32 14 -47z m-45 -53 c19 -15 19 -16 -3 -37 l-22 -22 0 21
+c0 12 -5 25 -10 28 -11 7 -4 25 8 25 4 0 16 -7 27 -15z m45 -35 c0 -6 -8 -25
+-17 -43 -14 -26 -18 -29 -21 -13 -2 10 2 29 9 42 13 25 29 32 29 14z m-67 -67
+c6 -34 1 -43 -23 -43 -28 0 -33 17 -13 45 23 31 29 31 36 -2z m-695 -311 c-5
+-27 -28 -26 -28 2 0 19 4 24 15 19 9 -3 15 -12 13 -21z">
+                        <animate id="p6" attributeName="stroke-dashoffset" begin="0.1s;f6.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f6" attributeName="fill" begin="p6.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1015 1150 c3 -5 56 -9 126 -8 104 2 122 0 137 -16 16 -18 16 -18 -3
+-11 -28 12 -255 19 -265 9 -5 -5 41 -9 103 -9 117 0 167 -8 167 -26 0 -6 -7
+-8 -16 -5 -9 4 -64 9 -122 13 -79 5 -104 3 -101 -6 3 -8 38 -12 109 -14 125
+-2 141 -9 109 -43 -31 -33 -91 -47 -164 -40 -164 16 -215 18 -215 9 0 -13 228
+-37 299 -30 108 9 175 57 183 131 3 27 0 30 -47 42 -59 16 -309 19 -300 4z
+m318 -42 c5 -15 -20 -68 -31 -68 -4 0 -6 18 -4 40 4 39 25 55 35 28z">
+                        <animate id="p7" attributeName="stroke-dashoffset" begin="0.1s;f7.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f7" attributeName="fill" begin="p7.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2475 1091 c-3 -5 -29 -18 -58 -28 -46 -16 -89 -18 -397 -18 -334 0
+-347 -1 -400 -22 -112 -46 -175 -113 -222 -239 -19 -51 -22 -79 -23 -214 l0
+-155 -100 7 c-182 15 -437 67 -887 183 -18 5 -28 3 -28 -4 0 -6 7 -8 15 -5 9
+4 37 -18 78 -60 59 -62 66 -66 107 -66 24 0 58 5 76 12 26 9 42 9 71 0 310
+-99 419 -122 622 -129 l154 -6 -7 24 c-4 13 -13 57 -21 97 -48 238 35 440 215
+526 l65 31 185 -4 c404 -9 451 -7 500 17 62 31 101 61 78 62 -9 0 -19 -4 -23
+-9z m-947 -168 c-41 -45 -73 -104 -91 -168 -20 -76 -24 -233 -7 -308 7 -31 11
+-60 8 -63 -8 -7 -152 -6 -214 1 -95 12 -118 16 -123 22 -3 3 14 3 39 -1 25 -3
+88 -9 140 -12 85 -6 97 -5 112 12 14 17 15 29 7 94 -5 41 -6 90 -2 110 4 19 6
+43 4 52 -4 28 29 141 57 191 23 43 73 97 90 97 3 0 -6 -12 -20 -27z m-1001
+-380 c58 -20 69 -33 26 -33 -26 0 -93 33 -93 45 0 8 10 6 67 -12z m103 -32 c0
+-5 -11 -11 -25 -13 -20 -4 -23 -3 -14 8 13 16 39 19 39 5z m383 -88 c-7 -2
+-19 -2 -25 0 -7 3 -2 5 12 5 14 0 19 -2 13 -5z m71 -12 c3 -4 -6 -6 -19 -3
+-14 2 -25 6 -25 8 0 8 39 4 44 -5z">
+                        <animate id="p8" attributeName="stroke-dashoffset" begin="0.1s;f8.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f8" attributeName="fill" begin="p8.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1473 1046 c-48 -40 -127 -76 -204 -92 -130 -28 -431 -6 -821 61 -16
+2 -28 0 -28 -5 0 -5 21 -12 48 -15 26 -4 148 -27 272 -52 346 -69 486 -68 607
+2 47 28 57 31 47 13 -4 -8 -3 -10 2 -5 5 5 9 14 9 20 0 7 8 12 17 12 10 0 25
+9 33 20 9 11 14 13 10 5 -4 -8 3 -4 15 10 12 14 18 18 14 10 -4 -8 -3 -12 1
+-7 8 7 15 47 9 47 -1 0 -15 -11 -31 -24z">
+                        <animate id="p9" attributeName="stroke-dashoffset" begin="0.1s;f9.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f9" attributeName="fill" begin="p9.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1785 938 c-37 -120 -59 -179 -67 -184 -6 -4 -20 4 -30 17 -11 13
+-31 37 -45 54 l-25 30 -19 -24 c-33 -40 -25 -81 26 -131 29 -28 45 -39 45 -28
+0 24 39 68 61 68 10 0 19 -4 19 -10 0 -5 -9 -10 -19 -10 -26 0 -50 -35 -58
+-85 -4 -28 -8 -34 -13 -21 -5 15 -14 8 -49 -38 -23 -31 -46 -54 -52 -51 -15
+10 -10 -38 10 -82 25 -53 63 -78 118 -77 89 2 160 80 208 228 23 72 27 97 23
+164 -5 91 -25 134 -78 169 -38 26 -49 28 -55 11z m95 -87 c5 -20 10 -60 10
+-88 l0 -53 -51 0 c-44 0 -51 2 -46 18 2 9 15 54 28 99 26 89 39 95 59 24z
+m-79 16 c-10 -9 -11 -8 -5 6 3 10 9 15 12 12 3 -3 0 -11 -7 -18z m-21 -83 c-8
+-26 -17 -41 -22 -36 -5 5 -1 29 9 56 21 57 30 42 13 -20z m-126 -11 c21 -33
+22 -40 10 -53 -13 -13 -17 -11 -38 13 -13 15 -23 36 -21 45 2 9 4 20 4 25 2
+18 23 4 45 -30z m111 -128 c-19 -36 -23 -53 -19 -106 3 -58 3 -60 -7 -29 -11
+35 -36 70 -49 70 -5 0 -32 -21 -61 -47 -29 -27 -48 -41 -43 -32 15 27 59 73
+80 85 10 6 25 31 33 56 17 55 58 88 78 61 10 -13 8 -24 -12 -58z m123 18 c-4
+-22 -55 -19 -78 3 -12 12 -8 14 34 14 40 0 47 -3 44 -17z m-103 -69 c-9 -14
+-20 -22 -26 -19 -5 4 -1 17 11 32 11 14 21 33 21 42 1 9 4 6 6 -7 3 -13 -3
+-34 -12 -48z m85 26 c0 -30 -82 -155 -93 -143 -22 21 21 129 57 143 29 12 36
+12 36 0z m-167 -87 c3 -10 8 -39 12 -65 6 -45 5 -48 -19 -54 -33 -8 -70 1 -91
+22 -15 16 -13 20 31 65 53 54 60 57 67 32z m71 -104 c-23 -25 -34 -24 -34 4 0
+32 9 38 32 26 19 -10 19 -12 2 -30z">
+                        <animate id="p10" attributeName="stroke-dashoffset" begin="0.1s;f10.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f10" attributeName="fill" begin="p10.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2762 920 c-36 -22 -38 -26 -16 -34 10 -4 13 -2 8 6 -5 7 0 9 15 5
+14 -3 24 1 31 13 15 28 -2 32 -38 10z">
+                        <animate id="p11" attributeName="stroke-dashoffset" begin="0.1s;f11.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f11" attributeName="fill" begin="p11.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M1984 864 c15 -38 26 -120 21 -146 -6 -27 -6 -27 62 19 37 25 88 55
+113 66 25 11 39 22 31 25 -15 5 -148 -45 -157 -59 -9 -16 -24 -10 -24 10 0 25
+-27 88 -42 97 -8 5 -9 2 -4 -12z">
+                        <animate id="p12" attributeName="stroke-dashoffset" begin="0.1s;f12.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f12" attributeName="fill" begin="p12.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M2450 771 c-287 -135 -549 -273 -578 -305 -88 -97 -145 -130 -215
+-124 -35 2 -60 -6 -152 -56 -155 -82 -285 -159 -285 -170 0 -4 10 -2 23 6 47
+31 244 138 253 138 5 0 -7 -10 -26 -22 -107 -65 -130 -81 -126 -85 3 -3 38 15
+80 40 41 25 77 43 80 40 2 -3 44 16 92 41 87 46 128 58 58 17 -20 -12 -34 -24
+-31 -27 3 -3 30 10 59 29 195 128 888 521 919 521 10 0 15 5 12 10 -4 5 1 7
+11 3 9 -4 15 -3 11 2 -3 5 0 11 7 13 7 3 8 7 3 10 -6 3 -93 -33 -195 -81z
+m-900 -506 c0 -2 -10 -9 -22 -15 -22 -11 -22 -10 -4 4 21 17 26 19 26 11z">
+                        <animate id="p13" attributeName="stroke-dashoffset" begin="0.1s;f13.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f13" attributeName="fill" begin="p13.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M643 623 c9 -2 15 -8 13 -11 -2 -4 15 -8 38 -8 22 -1 58 -9 79 -17
+33 -14 37 -19 31 -42 -5 -19 -2 -25 10 -25 12 0 16 10 16 38 l0 38 -77 17
+c-67 15 -163 24 -110 10z">
+                        <animate id="p14" attributeName="stroke-dashoffset" begin="0.1s;f14.end" values="1000;0"
+                                 dur="3s" calcMode="linear"></animate>
+                        <animate id="f14" attributeName="fill" begin="p14.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                    <path class="path" fill="none" stroke-width="10" stroke="white" stroke-dasharray="1000"
+                          stroke-dashoffset="1000" d="M450 427 c-137 -73 -360 -199 -360 -203 0 -8 74 27 150 70 98 56 120
+68 120 62 0 -2 -34 -26 -75 -51 -41 -26 -78 -51 -81 -56 -12 -20 19 -6 81 37
+37 25 70 43 73 40 3 -3 47 17 99 45 97 52 122 59 53 13 -22 -15 -37 -30 -34
+-35 3 -5 15 0 27 12 12 11 46 34 75 50 28 17 52 32 52 35 0 2 -20 1 -44 -2
+-23 -4 -52 -2 -62 3 -14 7 -33 2 -74 -20z m-50 -72 c0 -2 -10 -9 -22 -15 -22
+-11 -22 -10 -4 4 21 17 26 19 26 11z">
+                        <animate id="p15" attributeName="stroke-dashoffset" begin="0.1s;f15.end" values="1000;0"
+                                 dur="3s"  calcMode="linear"></animate>
+                        <animate id="f15" attributeName="fill" begin="p15.end" values="#00bac6" dur="2s"
+                                 calcMode="linear"></animate>
+                    </path>
+                </g>
+            </svg>
+            <ul class="col-xs-4 col-sm-5 col-md-8 col-lg-7 headlist">
+                <li class="headlist__list"><a class="headlist__link" href="#photo-info">Фото-галерея</a></li>
+                <li class="headlist__list"><a class="headlist__link" href="#about-info">О нас</a></li>
+                <li class="headlist__list"><a class="headlist__link" href="#comments-info">Комментарии</a></li>
+                <li class="headlist__list"><a class="headlist__link" href="#contact-info">Контакты</a></li>
+            </ul>
+            <div class="hidden-xs hidden-sm hidden-md col-lg-3 call-us">
+                <a class="call-us__link" href="#map"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    ул. Инглези(25-й Чапаевской Дивизии) 1Б
+                </a>
+                <a class="call-us__link" data-rel="external" href="tel:+380984433939" target="_blank"><i
+                            class="fa fa-mobile" aria-hidden="true"></i> +380984433939</a>
+                <a class="call-us__link" data-rel="external" href="tel:+380632981405" target="_blank"><i
+                            class="fa fa-mobile" aria-hidden="true"></i> +380632981405</a>
+            </div>
+            <div class="open">
+                <span class="cls"></span>
+                <span>
+		<ul class="sub-menu ">
+            <li><a href="#about-info">О нас</a></li>
+            <li><a href="#photo-info">Фото галерея</a></li>
+            <li><a href="#comments-info">Комментарии</a></li>
+            <li><a href="#contact-info">Контакты</a></li>
+        </ul>
+	</span>
+                <span class="cls"></span>
+            </div>
+        </div>
+    </div>
+</header>
+{% block content %}
+
+
+    {% endblock %}
+
+
+    {% block footer %}
+        <footer>
+            <p class="footer-text">Copyright © 2017 by <a href="mailto:wyra4ydo@gmail.com">SQRL</a>. All Rights Reserved</p>
+        </footer>
+
+    {% endblock %}
+
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/slick.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbesRudq_J480ouVZVeZidnpi66maMN68&callback=initMap"
+            type="text/javascript"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/37f5d03d4c.js"></script>
+</body>
+</html>

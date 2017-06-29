@@ -1,0 +1,41 @@
+# Assetic Configuration
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+    bundles:        [ 'WebBundle']
+    java: /usr/bin/java
+    filters:
+        less:
+            node: /usr/bin/node
+            node_paths: ['/usr/lib/node_modules','/usr/local/lib/node_modules']
+            apply_to: "\.less$"
+        cssrewrite: ~
+        uglifyjs2:
+            bin: %kernel.root_dir%/Resources/node_modules/.bin/uglifyjs
+            apply_to: "\.js$"
+        uglifycss:
+            bin: %kernel.root_dir%/Resources/node_modules/.bin/uglifycss
+    assets:
+        web_css:
+            inputs:
+                - css/normalize.css
+                - css/slick.css
+                - css/slick-theme.css
+                - css/bootstrap-grid-3.3.1.min.css
+                - css/main.css
+            filters: [ uglifycss, cssrewrite ]
+            output: css/web.min.css
+        web_head_js:
+            inputs:
+                - bundles/web/js/respond.min.js
+                - bundles/web/js/vendor/modernizr-2.6.2.min.js
+            filters: [ uglifyjs2 ]
+            output: js/web-head.min.js
+        web_footer_js:
+            inputs:
+                - bundles/web/js/bootstrap.min.js
+                - bundles/web/js/plugins.js
+                - bundles/web/js/jquery.colorbox-min.js
+                - bundles/web/js/main.js
+            filters: [ uglifyjs2 ]
+            output: js/web-footer.min.js

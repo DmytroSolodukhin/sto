@@ -1,0 +1,7 @@
+more_role_page:
+    resource: "@WebBundle/Resources/config/admin.yml"
+    prefix:   /admin_panel
+
+web_homepage:
+    path:     /
+    defaults: { _controller: WebBundle:Default:index }

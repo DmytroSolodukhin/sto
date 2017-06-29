@@ -1,0 +1,5 @@
+api_model:
+    resource: "@RestApiBundle/Controller/DefaultController.php"
+    type:     rest
+    prefix:   /
+    defaults: {_format: json}
