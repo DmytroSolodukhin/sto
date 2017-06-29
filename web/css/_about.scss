@@ -1,0 +1,94 @@
+.about {
+  padding: 5% 0;
+  background: white;
+  &__text {
+    color: #7b7b7b;
+    text-align: center;
+    font-family: Comfortaa, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+  &__service {
+    max-height: 400px;
+    overflow: auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.service-heading {
+  color: #7b7b7b;
+  font-family: Comfortaa, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.service-text {
+  text-align: left;
+  color: #9a9a9a;
+  font-family: Comfortaa, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.service-img {
+  margin: 5% 0;
+  width: 50px; //temp
+  height: 50px; //temp
+  fill: #f7584c;
+}
+.repair {
+  transform-origin: center;
+  animation: rotate 2s infinite ease-in;
+}
+
+@keyframes rotate {
+  0%{transform: rotate(0deg);}
+  20%{transform: rotate(20deg);}
+  50%{transform: rotate(-20deg);}
+  100%{transform: rotate(0deg);}
+}
+
+.idea {
+  transform-origin: center;
+  animation: flash 1s infinite ease-in;
+}
+
+@keyframes flash {
+  0%{fill:none;}
+  50%{fill: #FFD782;}
+  100%{fill:none;}
+}
+
+.three {
+  fill: #00bac6;
+  transition: 1s;
+  transform-origin: center;
+  animation: colored 3s infinite ease-in;
+}
+
+@keyframes colored {
+  0%{transform: translateY(0) rotate(0deg);}
+
+  50%{fill: #f7584c;transform: translateY(20%) rotate(20deg);}
+
+  75%{fill:(green);transform: translateY(-20%)}
+  100%{transform: translateY(0) rotate(0deg);}
+}
+
+.four {
+  fill: #cbe6a3;
+  animation: clock 4s infinite linear;
+}
+
+@keyframes clock {
+  0%{transform: translateX(0)rotate(0deg);}
+  50%{transform: translateX(40%)rotate(20deg);}
+  75%{transform: translateX(-40%)rotate(-20deg);}
+  100%{transform: translateX(0)rotate(0deg);}
+}

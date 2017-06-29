@@ -1,0 +1,23 @@
+.slider-photo {
+  padding: 10px 0 30px;
+  background: #ecf0f1;
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #7b7b7b;
+    font-family: "Comfortaa",sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}
+
+.slick-slide {
+  margin: 0 10px 10px;
+}
+.sliderparent {
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
