@@ -66,7 +66,13 @@ textarea:focus {
   overflow-y: scroll;
   background: #ecf0f1;
   margin: 0 auto;
-  padding: 1%
+  padding: 1%;
+  text-align: center;
+  color: #7b7b7b;
+  font-family: "Comfortaa",sans-serif;
+  font-size: 20px;
+
+  font-weight: 400;
 }
 
 .slider-comments {
@@ -75,12 +81,8 @@ textarea:focus {
 }
 
 .yourcomments {
-  text-align: justify;
-  color: #7b7b7b;
-  font-family: "Comfortaa",sans-serif;
-  font-size: 20px;
   line-height: 20px;
-  font-weight: 400;
+  margin: 8px 0 0;
 }
 
 #trigger {

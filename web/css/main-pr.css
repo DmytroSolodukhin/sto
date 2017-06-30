@@ -3,6 +3,7 @@ body {
   background: white; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 main {
@@ -28,6 +29,7 @@ main {
     font-weight: 400;
     line-height: 3.4;
     text-align: center;
+    -webkit-transition: 1s;
     transition: 1s; }
     .headlist__link::before {
       display: block;
@@ -36,6 +38,7 @@ main {
       height: 3px;
       width: 0;
       background-color: #00bac6;
+      -webkit-transition: width .5s ease-in-out, left .5s ease-in-out;
       transition: width .5s ease-in-out, left .5s ease-in-out;
       left: 50%;
       bottom: 0; }
@@ -46,6 +49,7 @@ main {
       height: 3px;
       width: 0;
       background-color: #00bac6;
+      -webkit-transition: width .5s ease-in-out;
       transition: width .5s ease-in-out;
       left: 50%;
       bottom: 0; }
@@ -56,6 +60,7 @@ main {
       width: 50%; }
     .headlist__link:hover {
       color: #00bac6;
+      -webkit-transition: 1s;
       transition: 1s; }
 
 .call-us {
@@ -69,9 +74,11 @@ main {
     font-weight: 400;
     line-height: 2.1;
     text-align: center;
+    -webkit-transition: 1s;
     transition: 1s; }
     .call-us__link:hover {
       color: #00bac6;
+      -webkit-transition: 1s;
       transition: 1s; }
 
 .call-us .fa {
@@ -89,6 +96,7 @@ main {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear; }
   .open span {
     display: block;
@@ -100,6 +108,7 @@ main {
     z-index: 100;
     top: 3%;
     overflow-x: hidden;
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     .open span:nth-child(1) {
       margin-top: 10px;
@@ -110,6 +119,7 @@ main {
       margin-top: 40px; }
 
 .sub-menu {
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   height: 0;
   width: 0;
@@ -126,6 +136,7 @@ main {
     clear: both;
     height: auto;
     margin-right: -160px;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
     .sub-menu li:first-child {
       margin-top: 150px; }
@@ -149,6 +160,7 @@ main {
       line-height: 40px; }
       .sub-menu li a:hover {
         color: #323a45;
+        -webkit-transition: 1s;
         transition: 1s; }
 
 .oppenned .sub-menu {
@@ -194,16 +206,15 @@ main {
 
 .hello {
   text-align: center; }
-.hello__heading {
-  color: white;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 71px;
-  text-transform: uppercase;
-  margin: -13% auto 0;
-  text-shadow: 2px 2px black;
-}
+  .hello__heading {
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0 5px; }
   .hello__text {
     width: 60%;
     color: white;
@@ -224,16 +235,19 @@ main {
   font-size: 20px;
   font-weight: 400;
   background: #f7584c;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   position: fixed;
   top: 50%;
   opacity: 0.8;
   left: 88%;
   text-align: center;
+  -webkit-transition: 1s;
   transition: 1s;
   z-index: 6; }
   .popup:hover {
     opacity: 1;
+    -webkit-transition: 1s;
     transition: 1s; }
 
 .popup-form {
@@ -284,13 +298,20 @@ main {
   outline: none;
   width: 42px;
   height: 42px;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
   transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
   margin-left: 90%; }
 
 .modal_close:hover {
   background: #3E465A;
+  -webkit-transform: rotate(360deg) scale(1.1);
   transform: rotate(360deg) scale(1.1);
-  transition: transform 600ms; }
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms; }
 
 button.modal_close span, span:before, span:after {
   background: #FFFFFF;
@@ -305,9 +326,11 @@ button.modal_close span:first-child {
   margin: auto; }
 
 button.modal_close span:before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 button.modal_close span:after {
+  -webkit-transform: translateY(-2px) rotate(-45deg);
   transform: translateY(-2px) rotate(-45deg);
   top: 2px; }
 
@@ -393,21 +416,51 @@ button.modal_close span:after {
   fill: #f7584c; }
 
 .repair {
+  -webkit-transform-origin: center;
   transform-origin: center;
+  -webkit-animation: rotate 2s infinite ease-in;
   animation: rotate 2s infinite ease-in; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  20% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+  50% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 
 @keyframes rotate {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   20% {
+    -webkit-transform: rotate(20deg);
     transform: rotate(20deg); }
   50% {
+    -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg); }
   100% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
 .idea {
+  -webkit-transform-origin: center;
   transform-origin: center;
+  -webkit-animation: flash 1s infinite ease-in;
   animation: flash 1s infinite ease-in; }
+
+@-webkit-keyframes flash {
+  0% {
+    fill: none; }
+  50% {
+    fill: #FFD782; }
+  100% {
+    fill: none; } }
 
 @keyframes flash {
   0% {
@@ -418,33 +471,75 @@ button.modal_close span:after {
     fill: none; } }
 .three {
   fill: #00bac6;
+  -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transform-origin: center;
   transform-origin: center;
+  -webkit-animation: colored 3s infinite ease-in;
   animation: colored 3s infinite ease-in; }
 
-@keyframes colored {
+@-webkit-keyframes colored {
   0% {
+    -webkit-transform: translateY(0) rotate(0deg);
     transform: translateY(0) rotate(0deg); }
   50% {
     fill: #f7584c;
+    -webkit-transform: translateY(20%) rotate(20deg);
     transform: translateY(20%) rotate(20deg); }
   75% {
     fill: green;
+    -webkit-transform: translateY(-20%);
     transform: translateY(-20%); }
   100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg); } }
+
+@keyframes colored {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg); }
+  50% {
+    fill: #f7584c;
+    -webkit-transform: translateY(20%) rotate(20deg);
+    transform: translateY(20%) rotate(20deg); }
+  75% {
+    fill: green;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
     transform: translateY(0) rotate(0deg); } }
 .four {
   fill: #cbe6a3;
+  -webkit-animation: clock 4s infinite linear;
   animation: clock 4s infinite linear; }
+
+@-webkit-keyframes clock {
+  0% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg); }
+  50% {
+    -webkit-transform: translateX(40%) rotate(20deg);
+    transform: translateX(40%) rotate(20deg); }
+  75% {
+    -webkit-transform: translateX(-40%) rotate(-20deg);
+    transform: translateX(-40%) rotate(-20deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg); } }
 
 @keyframes clock {
   0% {
+    -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg); }
   50% {
+    -webkit-transform: translateX(40%) rotate(20deg);
     transform: translateX(40%) rotate(20deg); }
   75% {
+    -webkit-transform: translateX(-40%) rotate(-20deg);
     transform: translateX(-40%) rotate(-20deg); }
   100% {
+    -webkit-transform: translateX(0) rotate(0deg);
     transform: translateX(0) rotate(0deg); } }
 .slider-photo {
   padding: 10px 0 30px;
@@ -584,9 +679,11 @@ footer {
 
 .footer-text a {
   color: #00bac6;
+  -webkit-transition: 1s;
   transition: 1s; }
   .footer-text a:hover {
     color: white;
+    -webkit-transition: 1s;
     transition: 1s; }
 
 .contact-content {
@@ -624,9 +721,11 @@ footer {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 1px;
+  -webkit-transition: 1s;
   transition: 1s; }
   .external a:hover {
     color: #00bac6;
+    -webkit-transition: 1s;
     transition: 1s; }
 
 .external .fa {
@@ -634,5 +733,3 @@ footer {
   font-size: 28px;
   margin: 0 10px;
   color: #00bac6; }
-
-/*# sourceMappingURL=main.css.map */
